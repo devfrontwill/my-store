@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -124,7 +126,7 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
 
             <div class="flex gap-2 w-full">
                 <img src="./assets/refri-1.png" alt="Coca lata"
@@ -172,14 +174,18 @@
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
-            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"> </div>
 
-                <p>Total: <span id="cart-total">0.00</span></p>
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
 
                 <p class="font-bold mt-4">Endereço de entrega</p>
-                <input type="text" placeholder="Digite seu endereço completo..." id="adress"
-                    class="w-full border-2 p-1 rounded my-1" />
-                <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo </p>
+                <input 
+                    type="text" 
+                    placeholder="Digite seu endereço completo..." 
+                    id="address"
+                    class="w-full border-2 p-1 rounded my-1"
+                />
+                <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo </p>
 
                 <div class="flex items-center justify-between mt-5 w-full">
                     <button id="close-modal-btn">Fechar</button>
@@ -200,7 +206,7 @@
         </button>
     </footer>
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./script.js"></script>
 </body>
 
